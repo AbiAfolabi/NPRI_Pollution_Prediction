@@ -67,7 +67,7 @@ def train_model(data, start_year, n_lags, target, params=None):
     }
 
     # Specify the directory and file name where the model should be saved
-    model_directory = '/home/rutholasupo/2500_Labs/model'
+    model_directory = '/home/abi_norquest_ml/NPRI_Project_Lab2/model'
     model_filename = 'random_forest_model.pkl'
 
     # Ensure the directory exists
@@ -83,9 +83,9 @@ def train_model(data, start_year, n_lags, target, params=None):
     return pipeline, metrics
 
 def main():
-    train_path = "/home/rutholasupo/2500_Labs/data/processed/train_processed.csv"
-    test_path = "/home/rutholasupo/2500_Labs/data/processed/test_processed.csv"
-    combined_data_path = "/home/rutholasupo/2500_Labs/data/processed/combined_data.csv"
+    train_path = "/home/abi_norquest_ml/NPRI_Project_Lab2/data/processed/train_processed.csv"
+    test_path = "/home/abi_norquest_ml/NPRI_Project_Lab2/data/processed/test_processed.csv"
+    combined_data_path = "/home/abi_norquest_ml/NPRI_Project_Lab2/data/processed/combined_data.csv"
     
     df_train = pd.read_csv(train_path)
     df_test = pd.read_csv(test_path)
